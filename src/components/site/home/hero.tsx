@@ -94,13 +94,21 @@ export function Hero({ ready }: { ready: boolean }) {
               as="h1"
               multiline
               rich
-              className={cn(serif, "mt-6 text-[clamp(3rem,7vw,7.6rem)] leading-[0.98] font-light text-white")}
+              className={cn(
+                serif,
+                "mt-6 font-light text-white",
+                lang === "ko" ? "text-[clamp(2.3rem,5.4vw,5.8rem)] leading-[1.12]" : "text-[clamp(3rem,7vw,7.6rem)] leading-[0.98]",
+              )}
             />
           ) : (
             <h1
               className={cn(
                 serif,
-                "mt-5 text-[clamp(2.9rem,7vw,7.6rem)] leading-[0.98] font-light tracking-[-0.01em] text-white [text-shadow:0_2px_30px_rgba(0,0,0,0.35)] md:mt-6",
+                "mt-5 font-light text-white [text-shadow:0_2px_30px_rgba(0,0,0,0.35)] md:mt-6",
+                // Hangul is set full-width, so the Korean headline runs a size smaller.
+                lang === "ko"
+                  ? "text-[clamp(2.3rem,5.4vw,5.8rem)] leading-[1.12] tracking-[-0.02em]"
+                  : "text-[clamp(2.9rem,7vw,7.6rem)] leading-[0.98] tracking-[-0.01em]",
               )}
             >
               {titleLines.map((segments, i) => (

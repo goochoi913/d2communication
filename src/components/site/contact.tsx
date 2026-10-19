@@ -53,7 +53,11 @@ export function Contact({ slug }: { slug?: CategorySlug }) {
             as="h2"
             rich
             multiline
-            className={cn(serif, "mt-6 text-[clamp(2.7rem,7vw,7.6rem)] leading-[0.98] font-light")}
+            className={cn(
+              serif,
+              "mt-6 font-light",
+              lang === "ko" ? "text-[clamp(2.1rem,5vw,5.4rem)] leading-[1.15]" : "text-[clamp(2.7rem,7vw,7.6rem)] leading-[0.98]",
+            )}
           />
           <Txt k="contact.body" as="p" multiline className="mt-8 max-w-xl text-[17px] leading-relaxed text-neutral-300" />
         </Reveal>
@@ -135,7 +139,9 @@ export function Contact({ slug }: { slug?: CategorySlug }) {
         <div className="mt-16 flex flex-col gap-5 border-t border-white/10 pt-8 text-xs text-neutral-500 md:mt-20 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-3">
             <D2Mark title="" className="h-5 w-auto" />
-            <span className="tracking-[0.26em] text-neutral-300 uppercase">D2 Communication</span>
+            <span lang="en" className="tracking-[0.26em] text-neutral-300 uppercase">
+              D2 Communication
+            </span>
           </div>
           <p>
             © {new Date().getFullYear()} D2 Communication. <Txt k="footer.rights" />

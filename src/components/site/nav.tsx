@@ -40,7 +40,9 @@ export function Nav({ slug }: { slug?: CategorySlug }) {
       <nav className="mx-auto flex h-16 max-w-[1600px] items-center justify-between gap-6 px-5 md:h-[72px] md:px-10">
         <Link href={home} className="-ml-1 flex min-h-11 items-center gap-3 px-1" aria-label="D2 Communication">
           <D2Mark title="" className="h-6 w-auto" />
-          <span className="text-[12px] font-medium tracking-[0.26em] text-white uppercase">D2 Communication</span>
+          <span lang="en" className="text-[12px] font-medium tracking-[0.26em] text-white uppercase">
+            D2 Communication
+          </span>
         </Link>
 
         <ul className="hidden items-center gap-7 text-sm text-neutral-200 lg:flex">

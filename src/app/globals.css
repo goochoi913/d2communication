@@ -147,6 +147,7 @@
   :lang(ko) em {
     font-weight: 500;
   }
+
   /* Never allow sideways scrolling; `clip` (unlike `hidden`) keeps position: sticky working. */
   html,
   body {
@@ -156,4 +157,16 @@
 /* The homepage intro plays once per visit; a script in <head> sets this class on repeat visits. */
 .d2-intro-seen [data-intro] {
   display: none;
+}
+
+/*
+ * Korean type adjustments. Outside any layer on purpose, so they override the tracking
+ * utilities set for the Latin design: spaced capitals are a Latin device, and Hangul
+ * display type sits better slightly tight.
+ */
+:lang(ko) .uppercase:not(:lang(en)) {
+  letter-spacing: 0.06em;
+}
+:lang(ko) .font-display:not(:lang(en)) {
+  letter-spacing: -0.015em;
 }

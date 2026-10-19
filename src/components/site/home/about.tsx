@@ -35,7 +35,9 @@ export function About() {
         ) : (
           <D2LogoScroll progress={scrollYProgress} effect="assemble" className="h-auto w-[min(62vw,440px)]" />
         )}
-        <p className="mt-10 text-xs tracking-[0.5em] text-neutral-400 uppercase md:mt-12 md:text-[13px]">D2 Communication</p>
+        <p lang="en" className="mt-10 text-xs tracking-[0.5em] text-neutral-400 uppercase md:mt-12 md:text-[13px]">
+          D2 Communication
+        </p>
       </div>
 
       <div className="mx-auto grid max-w-[1600px] gap-12 px-5 pb-24 md:grid-cols-12 md:gap-8 md:px-10 md:pb-36">
