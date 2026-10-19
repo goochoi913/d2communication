@@ -1,47 +1,57 @@
 # D2 Communication
 
-Website for D2 Communication, the production company of director and producer Jin Sam Choi.
+The website of D2 Communication, the production company of director and producer
+Jin Sam Choi: <https://d2communication.com> (Korean: <https://d2communication.com/ko>).
 
-This repository currently holds **six landing-page design options** for review. After one
-is chosen (or several are combined), the real site is built from it.
+## Editing the site
 
-## Review the design options
+Jin Sam Choi edits the site himself, on the page as visitors see it:
+
+1. Open <https://d2communication.com/edit> and sign in with Google. Only `pdjschoi@gmail.com`
+   and `goochoi913@gmail.com` can sign in; every other account is refused by the server.
+2. The site opens with a toolbar at the bottom. With **Edit** on:
+   - click any text to change it (English on `/`, Korean on `/ko`);
+   - click a photo to replace it, or a film to change its YouTube link, titles and credits;
+   - use **+** to add a film (paste the YouTube link, type the title, optionally a thumbnail),
+     photos (several at once) or a partner logo; the arrows reorder and the bin deletes,
+     always after asking;
+   - **⋯** has the pages, site settings, all texts, History and sign-out.
+3. Everything saves as a draft automatically. Visitors see nothing until **Publish**.
+   History restores any earlier published version.
+
+Uploaded images are resized and compressed automatically. Films stay on YouTube; only short
+muted preview loops (about 3 MB) are uploaded to the site.
+
+## How it's built
+
+- Next.js (App Router) as a static export (`out/`) on Firebase Hosting, with Tailwind CSS v4
+  and shadcn/ui; motion and Lenis for animation and scrolling.
+- Content is one document in Firestore (draft, published, and a version per publish).
+  Publishing updates visitors immediately, and a Cloud Function rebuilds the static site
+  within a few minutes so search engines and link previews follow.
+- Sign-in is Google via Firebase Authentication, limited to the two editors by blocking
+  functions, Firestore rules and Storage rules.
+
+Project rules and commands for contributors are in [CLAUDE.md](./CLAUDE.md). The six
+design options reviewed before this build are kept at the git tag `design-options-v1`.
+
+## Develop
 
 ```bash
 npm install
-npm run preview
+npm run emulators       # Firebase emulators (needs Java 21+)
+npm run dev:emulators   # the site at http://localhost:3000, using the emulators
 ```
 
-Then open <http://localhost:4173>. That index links every option:
-
-| Option | Brief | URL |
-| --- | --- | --- |
-| 1 · Reel | No restrictions | <http://localhost:4173/options/1> |
-| 2 · Monogram | Built from the logo | <http://localhost:4173/options/2> |
-| 3 · Frozen River | Based on the original mockup | <http://localhost:4173/options/3> |
-| 4 · Premiere | Cinematic and dark | <http://localhost:4173/options/4> |
-| 5 · Archive | Editorial documentary | <http://localhost:4173/options/5> |
-| 6 · Multiview | Extra: everything at a glance | <http://localhost:4173/options/6> |
-
-`npm run preview` builds the production static export and serves it. Animations run at
-real speed there, so use it for judging. `npm run dev` (port 3000) is for development with
-hot reload. While an option is open, the pill at the bottom left (or the ← / → keys) steps
-between options.
-
-All titles, credits, clients, contact details and video embeds are **placeholders**. Their
-single source is `src/data/site.ts`. Placeholder photography comes from Wikimedia Commons;
-see `public/images/placeholders/CREDITS.md`.
-
-## Stack
-
-- Next.js (App Router) as a static export (`out/`), hosted on Firebase Hosting
-- Tailwind CSS v4 and shadcn/ui (neutral base), icons from react-icons
-- motion for animation, Lenis for smooth wheel scrolling
-- Videos are unlisted YouTube uploads, embedded lazily and never self-hosted
+`npm run preview` builds the production export and serves it at <http://localhost:4173>.
 
 ## Deploys
 
-GitHub Actions builds every push to `main` and deploys it to Firebase Hosting. Pull requests
-get a temporary preview channel. See `.github/workflows/`.
+- Every push to `main` builds the site and deploys it to Firebase Hosting; pull requests get a
+  temporary preview channel.
+- Security rules are tested and deployed by CI (`.github/workflows/firebase-rules.yml`).
+- Cloud Functions are deployed by hand with `npm run deploy:backend`.
 
-Project rules for contributors are in [CLAUDE.md](./CLAUDE.md).
+Placeholder photography is from Wikimedia Commons (see `public/images/seed/CREDITS.md`);
+placeholder films are public-domain NASA footage and open films. All of it is marked
+"Sample" in edit mode until it's replaced.
