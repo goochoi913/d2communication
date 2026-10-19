@@ -24,6 +24,7 @@ import { EditableImage } from "./editable-image";
 import { EditableItem } from "./editable-item";
 import { EditableText } from "./editable-text";
 import { firebase, isEditor, signOut } from "./firebase";
+import { FontPanel } from "./panels/font-panel";
 import { WorkPanel } from "./panels/work-panel";
 import { CategoryPanel, PartnerPanel, PhotoPanel } from "./panels/simple-panels";
 import { AllTextPanel, HistoryPanel, SettingsPanel } from "./panels/site-panels";
@@ -186,8 +187,9 @@ function EditorSession({ user, lang, published, register }: { user: User; lang: 
       {panel?.kind === "category" ? <CategoryPanel slug={panel.slug as never} onClose={close} /> : null}
       {panel?.kind === "photo" ? <PhotoPanel id={panel.id} onClose={close} /> : null}
       {panel?.kind === "partner" ? <PartnerPanel id={panel.id} onClose={close} /> : null}
-      {panel?.kind === "settings" ? <SettingsPanel onClose={close} onAllText={() => setPanel({ kind: "alltext" })} /> : null}
+      {panel?.kind === "settings" ? <SettingsPanel onClose={close} onAllText={() => setPanel({ kind: "alltext" })} onFonts={() => setPanel({ kind: "fonts" })} /> : null}
       {panel?.kind === "alltext" ? <AllTextPanel onClose={close} /> : null}
+      {panel?.kind === "fonts" ? <FontPanel onClose={close} /> : null}
       {panel?.kind === "history" ? <HistoryPanel onClose={close} /> : null}
       {dialog}
 

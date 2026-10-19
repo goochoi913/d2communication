@@ -10,6 +10,7 @@
  * and promotional films; performance and event filming; his crafts; the partner list.
  */
 import type { ImageAsset, LogoAsset, Photo, SiteContent, Work } from "./schema";
+import { DEFAULT_FONTS } from "./fonts";
 import { CONTENT_SCHEMA } from "./schema";
 import { TEXT_DEFAULTS } from "./text-defaults";
 import seedImages from "./seed-images.json";
@@ -562,6 +563,7 @@ export const SEED_CONTENT: SiteContent = {
     koEnabled: true,
     searchVisible: false,
     featuredWorkId: "ice-road",
+    fonts: DEFAULT_FONTS,
   },
   text: TEXT_DEFAULTS,
   images: {

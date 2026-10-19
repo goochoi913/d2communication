@@ -71,6 +71,7 @@ export type PanelRequest =
   | { kind: "partner"; id: string }
   | { kind: "photo"; id: string }
   | { kind: "settings" }
+  | { kind: "fonts" }
   | { kind: "history" };
 
 export type EditorBridge = {

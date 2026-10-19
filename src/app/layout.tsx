@@ -1,16 +1,14 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css";
-// Korean serif in small unicode-range slices: a page downloads only the slices its characters need.
-import "@fontsource/noto-serif-kr/300.css";
-import "@fontsource/noto-serif-kr/400.css";
 
 import { INTRO_SEEN_SCRIPT, LANG_SCRIPT, LIVE_PREFETCH_SCRIPT } from "@/lib/head-scripts";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import "./globals.css";
 
-// Fonts ship with the site (no build-time download), so a rebuild after Publish can't fail on them.
-const display = localFont({
+// The default fonts ship with the site (no build-time download), so a rebuild after Publish
+// can't fail on them. Fonts chosen in edit mode load at runtime (components/site/font-setup.tsx).
+const cormorant = localFont({
   src: [
     { path: "../../node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-300-normal.woff2", weight: "300", style: "normal" },
     { path: "../../node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-300-italic.woff2", weight: "300", style: "italic" },
@@ -24,7 +22,7 @@ const display = localFont({
   fallback: ["Georgia", "serif"],
 });
 
-const sans = localFont({
+const inter = localFont({
   src: [
     { path: "../../node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2", weight: "100 900", style: "normal" },
     { path: "../../node_modules/@fontsource-variable/inter/files/inter-latin-wght-italic.woff2", weight: "100 900", style: "italic" },
@@ -50,7 +48,7 @@ const HEAD_SCRIPT = `${LANG_SCRIPT};${INTRO_SEEN_SCRIPT};${LIVE_PREFETCH_SCRIPT}
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`dark ${display.variable} ${sans.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`dark ${cormorant.variable} ${inter.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: HEAD_SCRIPT }} />
       </head>

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import {
+  LuALargeSmall,
   LuCheck,
   LuCircleHelp,
   LuCloudOff,
@@ -53,7 +54,7 @@ export function Toolbar({
   hidden?: boolean;
   editing: boolean;
   onEditing: (v: boolean) => void;
-  onPanel: (panel: "settings" | "history" | "alltext") => void;
+  onPanel: (panel: "settings" | "history" | "alltext" | "fonts") => void;
   onSignOut: () => void;
   onHelp: () => void;
 }) {
@@ -164,6 +165,10 @@ export function Toolbar({
             <DropdownMenuItem onSelect={() => onPanel("settings")}>
               <LuSettings2 className="size-4" />
               {t("settings")}
+            </DropdownMenuItem>
+            <DropdownMenuItem onSelect={() => onPanel("fonts")}>
+              <LuALargeSmall className="size-4" />
+              {t("fonts")}
             </DropdownMenuItem>
             <DropdownMenuItem onSelect={() => onPanel("alltext")}>
               <LuType className="size-4" />

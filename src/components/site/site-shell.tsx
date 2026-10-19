@@ -6,6 +6,7 @@ import { SiteProvider } from "@/components/content/site-context";
 import { SmoothScroll } from "@/components/motion/smooth-scroll";
 import { Toaster } from "@/components/ui/sonner";
 import { Contact } from "./contact";
+import { FontSetup } from "./font-setup";
 import { Nav } from "./nav";
 import { CategoryPage } from "./pages/category-page";
 import { HomePage } from "./pages/home-page";
@@ -20,6 +21,7 @@ export function SiteShell({ snapshot, lang, page }: { snapshot: ContentSnapshot;
   const slug = page.kind === "category" ? page.slug : page.kind === "photography" ? "photography" : undefined;
   return (
     <SiteProvider snapshot={snapshot} lang={lang}>
+      <FontSetup />
       <SmoothScroll>
         <WorkPlayerProvider>
           <PhotoLightboxProvider>

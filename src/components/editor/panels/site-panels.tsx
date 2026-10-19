@@ -14,7 +14,7 @@ import { Field, L10nField, Panel, SwitchRow, TextInput } from "../fields";
 import { formatBytes, LOOP_MAX_BYTES, uploadLoop } from "../media/upload";
 import type { VersionInfo } from "../store";
 
-export function SettingsPanel({ onClose, onAllText }: { onClose: () => void; onAllText: () => void }) {
+export function SettingsPanel({ onClose, onAllText, onFonts }: { onClose: () => void; onAllText: () => void; onFonts: () => void }) {
   const { state, store, lang } = useEditor();
   const t = useUi();
   const { settings } = state.draft;
@@ -89,9 +89,14 @@ export function SettingsPanel({ onClose, onAllText }: { onClose: () => void; onA
       </Field>
       <L10nField label={t("pageTitle")} path={["text", "meta.title"]} value={state.draft.text["meta.title"]} />
       <L10nField label={t("pageDescription")} path={["text", "meta.description"]} value={state.draft.text["meta.description"]} multiline />
-      <Button variant="outline" className="h-11" onClick={onAllText}>
-        {t("allText")}
-      </Button>
+      <div className="grid grid-cols-2 gap-2">
+        <Button variant="outline" className="h-11" onClick={onFonts}>
+          {t("fonts")}
+        </Button>
+        <Button variant="outline" className="h-11" onClick={onAllText}>
+          {t("allText")}
+        </Button>
+      </div>
     </Panel>
   );
 }

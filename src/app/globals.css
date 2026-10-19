@@ -7,10 +7,13 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  /* Inter for Latin, Pretendard (drawn to match Inter) for Hangul. */
-  --font-sans: var(--font-inter), "Pretendard Variable", Pretendard, ui-sans-serif, system-ui, sans-serif;
-  /* Cormorant Garamond for Latin, Noto Serif KR for Hangul. */
-  --font-display: var(--font-cormorant), "Noto Serif KR", ui-serif, Georgia, serif;
+  /*
+   * The site's two type roles. Pages set --site-text and --site-display from the fonts
+   * chosen in edit mode (components/site/font-setup.tsx); the fallbacks are the defaults:
+   * Inter / Pretendard for text, Cormorant Garamond / MaruBuri for display.
+   */
+  --font-sans: var(--site-text, var(--font-inter), "Pretendard Variable", Pretendard, ui-sans-serif, system-ui, sans-serif);
+  --font-display: var(--site-display, var(--font-cormorant), "MaruBuri", ui-serif, Georgia, serif);
   --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -145,7 +148,7 @@
     font-style: normal;
   }
   :lang(ko) em {
-    font-weight: 500;
+    font-weight: 600;
   }
 
   /* Never allow sideways scrolling; `clip` (unlike `hidden`) keeps position: sticky working. */
@@ -161,12 +164,12 @@
 
 /*
  * Korean type adjustments. Outside any layer on purpose, so they override the tracking
- * utilities set for the Latin design: spaced capitals are a Latin device, and Hangul
- * display type sits better slightly tight.
+ * utilities set for the Latin design: Hangul display type sits better slightly tight, and
+ * spaced capitals are a Latin device, so Korean labels keep only a hint of it.
  */
-:lang(ko) .uppercase:not(:lang(en)) {
-  letter-spacing: 0.06em;
-}
 :lang(ko) .font-display:not(:lang(en)) {
-  letter-spacing: -0.015em;
+  letter-spacing: -0.02em;
+}
+:lang(ko) .uppercase:not(:lang(en)) {
+  letter-spacing: 0.04em;
 }

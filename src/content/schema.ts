@@ -5,6 +5,7 @@
  * `normalizeContent` when the shape changes, so older drafts and versions still load.
  */
 
+import type { FontChoice } from "./fonts";
 import type { TextKey } from "./text-defaults";
 
 export const CONTENT_SCHEMA = 1;
@@ -154,6 +155,8 @@ export type SiteSettings = {
   featuredWorkId: string;
   /** Optional muted loop that plays over the hero photograph. */
   heroLoop?: LoopAsset;
+  /** Typefaces for Korean and English headings and text (ids from `src/content/fonts.ts`). */
+  fonts: FontChoice;
 };
 
 export type SiteContent = {

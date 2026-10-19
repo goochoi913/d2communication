@@ -1,5 +1,6 @@
 import type { Category, L10n, SiteContent, Work } from "./schema";
 import { CATEGORY_SLUGS, CONTENT_SCHEMA, FILM_CATEGORIES } from "./schema";
+import { normalizeFonts } from "./fonts";
 import { SEED_CONTENT } from "./seed";
 import { TEXT_DEFAULTS, type TextKey } from "./text-defaults";
 
@@ -94,6 +95,7 @@ export function normalizeContent(raw: unknown): SiteContent {
       koEnabled: typeof settings.koEnabled === "boolean" ? settings.koEnabled : seed.settings.koEnabled,
       searchVisible: typeof settings.searchVisible === "boolean" ? settings.searchVisible : seed.settings.searchVisible,
       featuredWorkId: str(settings.featuredWorkId, seed.settings.featuredWorkId),
+      fonts: normalizeFonts(settings.fonts),
     },
     text,
     images: {

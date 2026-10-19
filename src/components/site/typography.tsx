@@ -10,7 +10,7 @@ export const EASE = [0.22, 1, 0.36, 1] as const;
 /** The logo's red: the only colour on the site besides the photographs. */
 export const RED = "#CC0606";
 
-/** Display serif (Cormorant Garamond; Noto Serif KR for Korean). */
+/** The display face chosen in edit mode (Cormorant Garamond and MaruBuri by default). */
 export const serif = "font-display";
 
 /** Small spaced capitals above headings. */

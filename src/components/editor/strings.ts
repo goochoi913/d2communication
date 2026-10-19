@@ -189,6 +189,22 @@ export const UI = {
   pageTitle: { en: "Title in search results and link previews", ko: "검색 결과와 링크 미리보기 제목" },
   pageDescription: { en: "Description in search results", ko: "검색 결과 설명" },
 
+  // Fonts
+  fonts: { en: "Fonts", ko: "글꼴" },
+  fontsHint: {
+    en: "Changes show on the page at once; visitors see them after Publish. Only the fonts in use are downloaded.",
+    ko: "바꾸면 화면에 바로 보이고, 게시하면 방문자에게 적용됩니다. 실제로 쓰는 글꼴만 내려받습니다.",
+  },
+  fontPresets: { en: "Combinations", ko: "추천 조합" },
+  koDisplayFont: { en: "Korean headings", ko: "한글 제목" },
+  koTextFont: { en: "Korean text", ko: "한글 본문" },
+  enDisplayFont: { en: "English headings", ko: "영문 제목" },
+  enTextFont: { en: "English text", ko: "영문 본문" },
+  fontSerif: { en: "Serif", ko: "명조 · 세리프" },
+  fontSans: { en: "Sans serif", ko: "고딕 · 산세리프" },
+  fontDisplay: { en: "Display", ko: "제목용" },
+  fontDefault: { en: "Default", ko: "기본값" },
+
   // History
   historyTitle: { en: "Published versions", ko: "게시한 버전" },
   historyEmpty: { en: "Nothing has been published yet.", ko: "아직 게시한 버전이 없습니다." },
