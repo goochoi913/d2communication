@@ -1,0 +1,544 @@
+{
+ "palace-blue-hour": {
+  "src": "/images/seed/palace-blue-hour-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAADQAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdABoKD5o86BeoIjwA/tomwW9t1A6TP3BKmmsE/LjOp6OJlG0K9dWI5uVKsXWh93HlbM7MZvdyKhMBvHHWrA2Hq/X9de87Skf4VzumAwiw7MV/OvCeymPbDeEgNqXcryFgz6FPYcpo4+wJeU+SAAA="
+ },
+ "palace-snow": {
+  "src": "/images/seed/palace-snow-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZwAD5LGtVbvn/mOxNxFIAAD+7Huxh9GAD9eVQKk9W0G4Ngda8Uwoyi9fMk6qPIeBcyf5GK+CHQPZ/eJ9+ldRkAo4if46u0xufHMiSfyRXxczdHW0+fHnwHIGsaWfLwAAAA=="
+ },
+ "palace-snow-portrait": {
+  "src": "/images/seed/palace-snow-portrait-{w}.webp",
+  "widths": [
+   540,
+   1080
+  ],
+  "width": 1080,
+  "height": 1350,
+  "lqip": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACwBACdASoYAB4APu1kqE2ppaQiMBgMATAdiWkAACXcRB9wUv2dQWFE6UiEkHvUAP7uoSz5vMLnGAQG4hiTtzDsPJBe2TdXoB2SWtS8Wm5bmTRJPaBwQBV37HTr1RzprT/NWOtHYwnmqJqJQ8ScCGSwAAA="
+ },
+ "temple-lantern-gate": {
+  "src": "/images/seed/temple-lantern-gate-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwBACdASoYAA4APu1iqU2ppaQiMAgBMB2JZgCdL1yBe5iQG3i8I+tuCQAA/uWeN70ODOAY4fHN1bBZnyYnMLDx0vwxV6fhpW3CtOV4uvS8/ZLpHWdEw5p42tuFlwYyeUVAcMMkYXlQsRqiskuv4AAA"
+ },
+ "temple-lantern-gate-portrait": {
+  "src": "/images/seed/temple-lantern-gate-portrait-{w}.webp",
+  "widths": [
+   540,
+   1080
+  ],
+  "width": 1080,
+  "height": 1350,
+  "lqip": "data:image/webp;base64,UklGRvIAAABXRUJQVlA4IOYAAACQBQCdASoYAB4APu1mqk8ppaOiKA1RMB2JagCdMzQ6SBKCvqcdLry6rMYQEyJjU4FN3SYDdAD+zGIqLt+J79svauLzU8KI/qNfR63eyXINRQVxdsfc2cw6gUBOGvxtzKL95KG64cXo+xLm1Ztv8r5AGYCCNgASqsPCx6X29vsEoj9f/R1z7wZHmEwpHKsvSiHl4u9/2Y4eWti/bqVsyrJBS8AUr6Yv4CyFO7S4Ii1EHWaML5z7WYTdcmoc5zcc/fd6frwPWuiBOBFLWl2oKOPiKeHJDr9V71v0clgrRIMA2yY0UOgAAA=="
+ },
+ "tripitaka-archive": {
+  "src": "/images/seed/tripitaka-archive-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAABQBACdASoYAA4APu1iqU2ppaQiMAgBMB2JYgCdMoACH5sY+svRuIdpkQMAAP02SJ4IpMhb89LqoER/jnkXu6zbOUOen1CQIGWE9+1g5oitWRMMAICXAYpvynJ1/TLlo9LQi0hgjTNZLwTpEqBWpmSQRwUKhXPrb2nXhy27DmV54hGrQAG4XQ4zmhwtmxk2BELJCtMQAAA="
+ },
+ "hanok-blue-hour": {
+  "src": "/images/seed/hanok-blue-hour-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAADwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoMjkn/FsRNWVfookbt1peJJdCAAydpoFOZ+7we+lk1DRL7brw0L1VlZ+Y6F79XEJWGKb3tWSTfYqlYoRfhZCqMsQW4UreXjylI/Iv1+8spfu1x3/0uRb82j8unfjbUU8uSJNDHd953ISBFYfsLdFnTRJK0sY8wNJFwAAA=="
+ },
+ "celadon-bowl": {
+  "src": "/images/seed/celadon-bowl-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZQC/OBjvpfo4YEo7L8baYAD7AiWeRimAUd6UjQ3P2jKsZue+nD4OELRUu1sNUmyrB1D+pi9TmawtS9mUBtctN947b1g51DraA4MzxY5dDgGgAAA="
+ },
+ "iss-aurora": {
+  "src": "/images/seed/iss-aurora-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAwBACdASoYAA4APu1iqk4ppaQiMAgBMB2JaACsACHetJ+CedsTZVc6/oAA/u6Jo01xFhc9jjhRrfLOrxnC1IQLOcg9Z2yjhR5Cv/e2aQt4WYfGijhoA9kNmcVI189UTECkDGayEWEhIkKGEbeE//kj1ETV+bYY26s4+8OIAAA="
+ },
+ "observatory-milky-way": {
+  "src": "/images/seed/observatory-milky-way-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAwCdASoYAA4APu1kqU4ppaOiMAgBMB2JZQBUfobjKVLwE9YgeUAA/r17K/qUL0g3Jxnwu8bRr3vCijTbMjbrvtBwlb0NAjdbBTXsulcDUAAA"
+ },
+ "observatory-milky-way-portrait": {
+  "src": "/images/seed/observatory-milky-way-portrait-{w}.webp",
+  "widths": [
+   540,
+   1080
+  ],
+  "width": 1080,
+  "height": 1350,
+  "lqip": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADwBACdASoYAB4APuFepk2opSOiMAwBEBwJZwAASq94cepB3lkIV/kla7AIC3aak8wA/sw/U4j+0WjD6q9xFnZhCr/tzNyEYMNd4rUs6yi/rQPD/L42hY+q21hUJ3RE3Qt2g8YOIeUTCW6JrsVkxWSx+9JLiyW1vadXMU1bmlTTAAAA"
+ },
+ "lab-scientist": {
+  "src": "/images/seed/lab-scientist-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JaACdABSt0bBcbpM6yCwAAPPiy0HY7CGEolD3OXp+hOVQkFkqaeooQHqdJuIKcF0h8b0rRnX0JVb/ZqGalAOsYc1T+spQMDAY6XRgMmmmf5ueJLmsm2Fq6o5JmiqGPvHeolrd+Gk4zK9mjL75fbxObe9qAeAA"
+ },
+ "lab-scientist-portrait": {
+  "src": "/images/seed/lab-scientist-portrait-{w}.webp",
+  "widths": [
+   540,
+   1080
+  ],
+  "width": 1080,
+  "height": 1350,
+  "lqip": "data:image/webp;base64,UklGRv4AAABXRUJQVlA4IPIAAAAwBgCdASoYAB4APu1srlIppaQiqAgBMB2JaACdMoM6A+gFx9iTuychasiGyDQlo4bYHP8ATDAqHeQAAPojGrsQjpoz+c4gwD6oZJX1WS5L7QBsOp2Ls8jNr+vg104z65zJGNki4p0Ryt9UBkp7ulgBHU7msD2LVfglFocTDya1ak/9tpXcdCz23LOvwjVSmzm6+/1Y8AIfw50Gye6pVxtdxGeueZiSpsJVgCOnOHvE+jNrtvuXJ8yFxlwmMJC2D7UumFHuy7uUEt4C8JIt+o2i+qnuFxh8wLVTBkBP6VfdEC5qdjHMXlCQu3zRRnX6xoAAAA=="
+ },
+ "arctic-iceberg": {
+  "src": "/images/seed/arctic-iceberg-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBWAA6fDkzzjFXI9a6SXEAD+YVOOsc+Uxf7TbkXSjhd3Z72juWB47Y6inyjhBdTX+K2VIAe8j3MD8mTfuPiEo/hIWzOCK6g/Ng91WolVQHlpFNpqV9YA"
+ },
+ "volcano-eruption": {
+  "src": "/images/seed/volcano-eruption-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAACQBACdASoYAA4APu1kqU2ppaQiMAgBMB2JbACdMoR4GCHHBsyfGpMHQBsbIAAA4hjGi6uHaWGVMHbeP0STSMtBsI4NpToTRZu7mcni6qQgvmFL3NDUbN2URw80dwOEZqMyKbcylpXUk8erXUyQCHEjOP8GjdxStajpKWGpy6gDLQjKsNNMZnzd8n6ei65MYCcXGFuHsBWAAA=="
+ },
+ "server-racks": {
+  "src": "/images/seed/server-racks-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADwAwCdASoYAA4APu1iqk2ppaQiMAgBMB2JQAAJgenzAiQMbzHoc9VAAP7qVaHzGl8wmYYsOvImPFJAfi7+WXzmzhjd28jZQm4AqeluvVrLaTMMvl/FyMK2ZPVgHpa15Kus3UWoCia3YjpLobulPaLl5MqK90icV6IDVrgAAAA="
+ },
+ "server-racks-portrait": {
+  "src": "/images/seed/server-racks-portrait-{w}.webp",
+  "widths": [
+   540,
+   1080
+  ],
+  "width": 1080,
+  "height": 1350,
+  "lqip": "data:image/webp;base64,UklGRhQBAABXRUJQVlA4IAgBAADQBQCdASoYAB4APu1srFEppaQiqAqpMB2JYgDI2AgdtO5jNdrIUerbEjPAKZ+g1dermQX8HQyAAP7sABg1cuLhWWGWQns74xN6K7bna/C3OHzvbqR4maYqthNSjBERfTzUEQVkl4ENOrzH3dVCzmXtoW8f2PCmwMRgL1rD9Wceo8lynWXN3jH47//TJNZFoEDga/Hcob/A+Qp1CsZtSAMwK7mCv0RAu0bMMKNnEtZ4iQUi/LpID1bCsrezusDJTJ2Xd6ZJAIITI5IJ8f6QrJOHA1sgZQCQWuNuGvSvH0zkqI3UWZhpzr8zdjZ3O9rpzU+zqs/CBApo5DNOYuagocv1opzMneuwAAA="
+ },
+ "silicon-wafer": {
+  "src": "/images/seed/silicon-wafer-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JagCdABog9KQhu9YK2y8AAP70L5luVWITs7HeqMfTZ5KSBq9Iu6f01FyhWK31whsAUmcMbuymkB/fqHSeTnHSd6NPaniBlwz/tDSb8z+sygAA"
+ },
+ "robot-cleanroom": {
+  "src": "/images/seed/robot-cleanroom-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAACQAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JZQDLLBqxlbuY2mOgAP3Zf03EjkUG+pmhKfLQpwUvyLPrDTqntjizOF8hgxjVl2WXsPFbO1c2KOvGNedAK189b6ssVlH/0AVqHefqIgKTnyVzGYEAqusWm9z7NkT/5zLW3xS6oND87g/+MvFR8DhpGF9mousnwAA="
+ },
+ "radio-telescope": {
+  "src": "/images/seed/radio-telescope-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACsOUAAt82j6XE/GZfl6RTAAPEf+Ae2UB7AmQIbhfvpJzRx35k7vR7Aook6vxAuAS2WJPrE7mIROpWO3buxof+58joyeCkEjDNky7mhKqtsYaYFfcE7uPcEq+eZiOBGcnYl4IHNmpNB3YIcAA=="
+ },
+ "siberia-village": {
+  "src": "/images/seed/siberia-village-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADQAwCdASoYAA4APu1kqU2ppaOiMAgBMB2JZACsABQtEEOIehd72QAA/rGE51DOGVg6TaUyfQC563Ai72NHfsBAVvkaY5ElIznjvin8aBvCpQiKPV8JYXlLJCO0wGZUecNyrHKeqGHHdCAA"
+ },
+ "baikal-ice-cave": {
+  "src": "/images/seed/baikal-ice-cave-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABwBACdASoYAA4APu1iqk2ppaQiMAgBMB2JZACdMoR3ABylMiG93EyarorLgAD+7p9IVa9mMOTDuJsO2aVqWwaM6qMBnFImTQcQ0QLXcUIxRtNtaHWjd7M52JO/91J9qK3ZaCxkyhiwDn0Kzh2DiXbSgNRdzF6yAXK4ZSJGAAA="
+ },
+ "baikal-ice-cave-portrait": {
+  "src": "/images/seed/baikal-ice-cave-portrait-{w}.webp",
+  "widths": [
+   540,
+   1080
+  ],
+  "width": 1080,
+  "height": 1350,
+  "lqip": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAAAQBgCdASoYAB4APu1mrE+ppSQiMBgIATAdiUATpAS4K9Z5dbSVGFBiTWYEqo4cu7m0BVbkEXszIgAA/oebdVglGwMCS5/VwOmVLcw+tcZ7RZuYZYiolxR0U3Blqd/e5aJI/P/0Mzsaw2iM3g+7D2ufNIL5FIh4NMUqOMqWVj2fEL/QPh1C+UduFpQ/wA+XwvQHtId4ZS+iQ/gW1OJOzaLVr2qR4BBkF17UGnI7+uELmQMD0UYOB9O+WgA="
+ },
+ "seoraksan-clouds": {
+  "src": "/images/seed/seoraksan-clouds-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOgBA/V2CIpcvXUR3zwAP5USxyi4ocm2z2x0X3JfZObQ7CaVJ7rWFF7cRRehZXmqC135M4Apoba812QnvnUUyIMByMJ5waIdnNs/bGgidUOxvifjigWmnI7t7EAAAA="
+ },
+ "harbour-sunrise": {
+  "src": "/images/seed/harbour-sunrise-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JaACdMoACsVjFj01izXatdPAA/u2wsWyna4/Dxna3cAgt53pjpHoO+iWzjBGeF3aCTChpiozAx9579cMbMcZiESyIgJ4kp8nybzWHNjwWchfneNtRzWc45sMJ4ApZryH5Teh4r97igTZZlBFeedMuyVOX3+fU007XjZcgyYj3fHbuVXq2cHcyxAAAAA=="
+ },
+ "port-cranes-sunset": {
+  "src": "/images/seed/port-cranes-sunset-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAACwBACdASoYAA4APu1kqU2ppaOiMAgBMB2JbACdMoMYAEIoPO3PueRzP/+RhqCAAP5Ucihon35I8JncnkPC3xsIEjDl/gegz3390CWfPzJ8oXTW/X06rjnXUjL607QQqjy5feXrQujD7bfd6fX8NZdBn2l3+ElD5tbIA6L65aJjVl7jtghm8oUhxCiYsCpAnjE6AAAA"
+ },
+ "welding-sparks": {
+  "src": "/images/seed/welding-sparks-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACQAwCdASoYAA4APu1iqU2ppaQiMAgBMB2JaQAAW+95oi5ce6ygAP7zAA4Atx2F3LrEa9KiDXYWNBr5uJ6tefZGF3BYTYG/hAA="
+ },
+ "welding-sparks-portrait": {
+  "src": "/images/seed/welding-sparks-portrait-{w}.webp",
+  "widths": [
+   540,
+   1080
+  ],
+  "width": 1080,
+  "height": 1350,
+  "lqip": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADwBACdASoYAB4APt1gpE2opiOiN/qoARAbiWcAAFu0rdLjPya1BRH1y/iedu5sVxAA/vVnD9BMQ4xNVe3zXPMB8IXXUEySi2XkSE2YDYdh5+qypFZK4WMB377IDcXAFp1zTWZi/yRyuKUepZcCOm+9jByx5wIAAAA="
+ },
+ "architecture-ddp": {
+  "src": "/images/seed/architecture-ddp-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYwCw7CFV6vKvDYOHRvNJQAD+8Qv3Tv0QHE7FxeBRbXMNCJsOVqzc3E3O1415SOJll4XmvIAzQfTMCki/cCgurD8ufwQbPOw2OXB4nO3alwCiNGH9qJ0uS/E2UAAA"
+ },
+ "seoul-skyline-night": {
+  "src": "/images/seed/seoul-skyline-night-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADQAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JZwAAUclpJnerP0Y7tHAA/uNNJpItsds2Ht8FuCd5CZ/jkaxmbcumRC5tfW6oPpqs8v/DmfD6OJ4j7EOnkcU3qJ4AWUTr9/fuZAkveiGkAA=="
+ },
+ "highway-night-aerial": {
+  "src": "/images/seed/highway-night-aerial-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAQBQCdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoR3JoHhgAPJD4ekfas+RVAxcYpgAP7pO3tx85QEttEU7pIAkrHEShloLMdLC6qIxECFLHuNltJBVcBEif8uSJJz+zrgk9fs+dK+ZjebFsEu7LJ9ppibKw6j5F/y+2G7+/hbHYctvUgAAA=="
+ },
+ "surgical-light": {
+  "src": "/images/seed/surgical-light-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdMoBOABdA8/qEkmxxKjZnAAD7/jYe/qg+lf/5nVjmD11Ocso6UfXq3WgEUFZNAegOHuLl6Ce3l0jmhCe+DyZX5RZ+So3ZEGj4NQKkmdf8f2ZLdaUDdVw60h3m421Ca+1JkeVR2sOuJn3VL7iSsQGdZwe8Afyv/jzqZ9z/9z2//8EnAqXkUqXQ766ZzpN9JiWX+DVKiqW0YAA="
+ },
+ "orchestra-hall": {
+  "src": "/images/seed/orchestra-hall-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOmUAB4uKFLRzQ0yx/3SgKgAP7vS1LBXHYRcFDPRu2kqwXuMMZuB3zrahaqbveva/9sdxaVzMnZ4xJHE/DhWmk4mcBF/v+lpA/Y4q+c76nexfoGiB1bYDRWZd7RUdiQAAAA"
+ },
+ "pungmul-night": {
+  "src": "/images/seed/pungmul-night-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JaAC7MoAlsxenkm+A014Zac429MTIAP70JR7PR+cFuuQECZHrxa38MMYSLa8SlFOMSSdzphnA7XF1OEVFxdwdaTQDQLEZ3D/G617jnLhWXu/CAD/mgEahen3ANoD8Tvn5ClYPc7CXTUph442vv3TQREaapzZZzMhXWi5qcivktM4B8PF8aDz1W8xV3Uo1zD3d8UMdEPHQJoQ4iAA="
+ },
+ "pungmul-night-portrait": {
+  "src": "/images/seed/pungmul-night-portrait-{w}.webp",
+  "widths": [
+   540,
+   1080
+  ],
+  "width": 1080,
+  "height": 1350,
+  "lqip": "data:image/webp;base64,UklGRg4BAABXRUJQVlA4IAIBAACwBQCdASoYAB4APu1cqU4ppKOiMBgMATAdiWQAs6DTIK0k/XL4bZsz9GDzc5Wy0PT1hIh5HgAA/vkMLqQfXqqlrsZRDMEhqrNnshTRE+cllazgljlPSpDlU/nMWyugtJ6WrugblfU9/65AO5RbhOWMY1lQcuNAVpovkZrP3831tHWlASwgchSA6dCgx1tP3YsMIpIMuvlFQmAi5dXr6ltXLK42Ic/Jk/X+Qtp+DzSdy4QiwS1VQVaR4nxxjtLo8SGZ4TYuPZWM8GPiqecUVwnghgbNUx1rGUKMI11fFefwWBtf+nJKXhTxV/cPwy6vWjk0WXywadEdvlChCBTAJ51gAAA="
+ },
+ "gugak-ensemble": {
+  "src": "/images/seed/gugak-ensemble-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAABQBACdASoYAA4APu1iqk4ppaQiMAgBMB2JZgCdMoADQGtSAVyUqyUS6y8AAP7w2Ms19CggR0xtbGRiLCBfaX4ZBMr468ovDHaJPYz/R/LFyjwwUyrXMezEWKa3E1oEIsScie+/xQ5/A2873qBawkXs0c3mmrMZNOEn4tsBPGsvLbWbJgYGhrCOcKWEozFIeR19i2z40O+CiAAA"
+ },
+ "contemporary-dance": {
+  "src": "/images/seed/contemporary-dance-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZwDKAaeieBTXpFv+hn4p7AXAYAD+9CAVwRpseIvr1JR7rjxaifhHHLyX4N+0nJhcpvKmQr92LYo87fgQdMKUtf9l9s1L0zbC/k432Svqh32Wz/oj5j2Jpa+darkbH/M3gaz/lSK7uYaf+1d/X5F/AvzLvd34D451cbhAAAA="
+ },
+ "contemporary-dance-portrait": {
+  "src": "/images/seed/contemporary-dance-portrait-{w}.webp",
+  "widths": [
+   540,
+   1080
+  ],
+  "width": 1080,
+  "height": 1350,
+  "lqip": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABQBQCdASoYAB4APuVgpk2pJaOiN/VYASAciWcAzNGLc8YASbexkryBu+RvmdgZBpS+EsAA/vhHrhOn2o5TRmUrILo4vcr7bnXv5ASRin0zEfMEWOM7P+t3Hb3fl4xcIWKu7vDOjNf3Vzli8ss5SyDdAnZXzi2XpeehXwdidZmnH/6BQ4+P9wAQvV11/AtJsSaV6wVUu08ogUCYuXHfdpPP0YHJrI3LxcWTPvATXg2oAA=="
+ },
+ "concert-stage-lights": {
+  "src": "/images/seed/concert-stage-lights-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRuIAAABXRUJQVlA4INYAAACwBQCdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdMoRwIrZS8A3gXCAtfZUD6kiR7oQ6Jnvh6+AA/trAJOlb0IT1ZZvK24a8Ea4+NnzFRb1l1TX7Xf0SUwOlYKmobQP1am+aB9cxbapWkwDIj+CY6xGcrZl58P2y2S/2TNbqF/3hX58xnTRInZdgYcG+xs+8bE5/HjvuFtomC4D+vkjUuJMULxbeod7Umm9QM78oFUv/JbtHXv+eLYWsI1Vyz0alkf/Y35cKynRj/e2iLX6Y01oQe+WD2AAA"
+ },
+ "fireworks-han-river": {
+  "src": "/images/seed/fireworks-han-river-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAQBACdASoYAA4APu1kqU2ppaQiMAgBMB2JZgCdABuTGf8A3PdWombAAAD+9DLUq0h1iqyi8ZWtKm9h57FZQkzK3Y1ozLIhDPadIn9xYuYxNgKc3L3f3fz5KOfc6MTlegzHC7DJPXUxY7Ovk0JHvJzCKEmG7o6wu/5SZV87/qFjCZrGbBP7/uD70AA="
+ },
+ "crew-antarctica": {
+  "src": "/images/seed/crew-antarctica-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAQBACdASoYAA4APu1iqU2ppaQiMAgBMB2JZwDG9YuutpUk+hO7EkH9MAD941N/P2kvy7umtb+H6+z3cP/JBYVGC47dGAHpa3Jrm35z9Bdus77KAbzZ3XwcDQ7wIRpnO3+cfdne7RYnfwctv2XjUI8lbm/nGjJryElr+TpmQ6Tb++sWJegAAA=="
+ },
+ "camera-sunrise": {
+  "src": "/images/seed/camera-sunrise-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAwBACdASoYAA4APu1iqk2ppaQiMAgBMB2JYgCdMoMYADu7OUqk2KixMZ4A+pQgXa/lAUbwaSVPryOWfwJUvb1DotAEHrcqtYWFJ9nwsxN4nnv7JYg3vSy5Gd4sk0zT2Ijao/yNVB4AAA=="
+ },
+ "camera-sunrise-portrait": {
+  "src": "/images/seed/camera-sunrise-portrait-{w}.webp",
+  "widths": [
+   540,
+   1080
+  ],
+  "width": 1080,
+  "height": 1350,
+  "lqip": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAQBQCdASoYAB4APu1am02ppKIiN/VRMB2JZACxHy/GvqoqT/F5nufoBlDEwqKlGSAgAP6cbKj+Ye7+RyxydynFjqRuskkVaNeNXQHMDwBUomPbHyNkDMbx3miFVncXYqRtt/CN/VjtAGQubczkdufI8LTKX/hApYZUbir/avoARiNA/O1mIAAA"
+ },
+ "control-room": {
+  "src": "/images/seed/control-room-{w}.webp",
+  "widths": [
+   640,
+   1280,
+   1920
+  ],
+  "width": 1920,
+  "height": 1080,
+  "lqip": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBYg6wALFpAzaxrusiOVE7FFgAD+8S+Z40pWIrTL8FV46XcO6uJ2mBeqTj1j5ziVWyLcBGBJWMUcCUQO3zhABm8/oPkA+k41/hvwkAUYrz2aySOnfP5bf3Pgd1yBmLBcWe4YxeD+ewrs6IwBf25FGz7ivQj3shE4ChN+7uRgAAAA"
+ },
+ "hero-redline": {
+  "src": "/images/hero/frozen-river-redline-{w}.webp",
+  "widths": [
+   960,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "lqip": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAACQAwCdASoYABAAPu1kqk4ppaQiMAgBMB2JaQAAXBoUEKbLUpoAAP4it90U9LUWZx3ftZ6GNN2DEPm5yO4yIYwIKcHd3DWIsIvmdAY9sH8H/AfybHX16BysKAKqGxHDAAA="
+ },
+ "hero-bw": {
+  "src": "/images/hero/frozen-river-bw-{w}.webp",
+  "widths": [
+   960,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "lqip": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAACQAwCdASoYABAAPu1kqU2ppaOiMAgBMB2JaQAAXBp9+3GGyMfAAP4it90U7//k3HR4Ys0LECzLhsUbI2xYn+Ya9FZOVlyz6D0O2AUAzOqNtvk3Juqd1L/qmfyBQAAA"
+ },
+ "hero-color": {
+  "src": "/images/hero/frozen-river-color-{w}.webp",
+  "widths": [
+   960,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "lqip": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACwAwCdASoYABAAPu1kqk4ppaQiMAgBMB2JQAALgzqwEuejZDa7sADxxXyhjnJgFxjtDsZEDKZfQBjIiBf9sbPI1bTn7lDziyzFLza5oAaEHycCSTwUhesYZ/AAAA=="
+ },
+ "partner-cleveland-museum-of-art": {
+  "src": "/images/partners/cleveland-museum-of-art.svg",
+  "width": 368.55,
+  "height": 279.78
+ },
+ "partner-cultural-heritage-administration": {
+  "src": "/images/partners/cultural-heritage-administration.svg",
+  "width": 1658.222,
+  "height": 536.589
+ },
+ "partner-dayton-art-institute": {
+  "src": "/images/partners/dayton-art-institute.svg",
+  "width": 232,
+  "height": 46
+ },
+ "partner-ebs": {
+  "src": "/images/partners/ebs.svg",
+  "width": 159.3,
+  "height": 51
+ },
+ "partner-kbs": {
+  "src": "/images/partners/kbs.svg",
+  "width": 62.07,
+  "height": 19.568
+ },
+ "partner-korea-heritage-service": {
+  "src": "/images/partners/korea-heritage-service.svg",
+  "width": 303.917,
+  "height": 60.75
+ },
+ "partner-mbc": {
+  "src": "/images/partners/mbc.svg",
+  "width": 1000,
+  "height": 287.612
+ }
+}
