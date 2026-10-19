@@ -1,0 +1,45 @@
+rules_version = '2';
+
+// Media uploaded from edit mode, served publicly:
+//
+//   media/img/…     photos, resized in the browser before upload
+//   media/poster/…  film thumbnails
+//   media/logo/…    partner and broadcaster logos
+//   media/loop/…    short muted preview loops (~3 MB)
+//
+// Uploads are never overwritten: every file gets a new path, so it can be cached forever
+// and older published versions keep pointing at the files they used.
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    // The only two accounts that may edit. Keep this list identical to EDITOR_EMAILS in
+    // src/lib/firebase/config.ts, firestore.rules and functions/src/editors.ts.
+    function isEditor() {
+      return request.auth != null
+        && request.auth.token.email_verified == true
+        && request.auth.token.email in ['pdjschoi@gmail.com', 'goochoi913@gmail.com'];
+    }
+
+    function isMediaKind(kind) {
+      return kind in ['img', 'poster', 'logo', 'loop'];
+    }
+
+    function isAllowedUpload(kind) {
+      let size = request.resource.size;
+      let type = request.resource.contentType;
+      return (kind in ['img', 'poster'] && size <= 10 * 1024 * 1024 && type.matches('image/(webp|jpeg|png|avif)'))
+        || (kind == 'logo' && size <= 5 * 1024 * 1024 && type.matches('image/(svg\\+xml|png|webp|jpeg)'))
+        || (kind == 'loop' && size <= 25 * 1024 * 1024 && type.matches('video/(mp4|webm)'));
+    }
+
+    match /media/{kind}/{rest=**} {
+      allow read: if isMediaKind(kind);
+      // Uploading to a path that already exists also counts as `create`, so check for it
+      // explicitly. There is no `update` rule, so metadata can't be changed either.
+      allow create: if isEditor() && isMediaKind(kind) && resource == null && isAllowedUpload(kind);
+      allow delete: if isEditor() && isMediaKind(kind);
+    }
+
+    // Everything else is closed.
+  }
+}

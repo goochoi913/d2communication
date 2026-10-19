@@ -51,3 +51,16 @@ firebase-debug.log*
 /Screenshot*.png
 /d2communication-logo.svg
 /d2communication-logo-no-background.svg
+
+# content snapshot fetched from Firestore at build time (scripts/sync-content.mjs)
+/src/content/snapshot.json
+
+# Firebase functions build output and emulator logs/data
+/functions/lib/
+/functions/node_modules/
+/.emulator-data/
+firestore-debug.log*
+ui-debug.log*
+storage-debug.log*
+database-debug.log*
+pubsub-debug.log*

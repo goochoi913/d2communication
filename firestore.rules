@@ -1,0 +1,90 @@
+rules_version = '2';
+
+// Content for d2communication.com.
+//
+//   content/published   the live site: anyone may read it, only editors publish
+//   content/draft       edit mode's working copy: editors only
+//   versions/{v}        one immutable copy of every publish, for history and restore
+//
+// `json` holds JSON.stringify of the whole site content. Publishing writes
+// content/published and versions/{version} in one batch, and the rules below refuse a
+// publish whose history entry is missing, so every published version can be restored.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // The only two accounts that may edit. Keep this list identical to EDITOR_EMAILS in
+    // src/lib/firebase/config.ts, storage.rules and functions/src/editors.ts.
+    function isEditor() {
+      return request.auth != null
+        && request.auth.token.email_verified == true
+        && request.auth.token.email in ['pdjschoi@gmail.com', 'goochoi913@gmail.com'];
+    }
+
+    // A Firestore document is capped at 1 MiB; leave room for the other fields.
+    function isContentJson(value) {
+      return value is string && value.size() <= 1000000;
+    }
+
+    function signedByEditor(time, email) {
+      return time == request.time && email == request.auth.token.email;
+    }
+
+    match /content/published {
+      allow get: if true;
+      allow create: if isEditor() && isValidPublish(1);
+      allow update: if isEditor() && isValidPublish(resource.data.version + 1);
+    }
+
+    function isValidPublish(expectedVersion) {
+      let data = request.resource.data;
+      let history = /databases/$(database)/documents/versions/$(string(expectedVersion));
+      return data.keys().hasOnly(['json', 'version', 'publishedAt', 'publishedBy'])
+        && data.keys().hasAll(['json', 'version', 'publishedAt', 'publishedBy'])
+        && isContentJson(data.json)
+        && data.version is int
+        && data.version == expectedVersion
+        && signedByEditor(data.publishedAt, data.publishedBy)
+        && existsAfter(history)
+        && getAfter(history).data.json == data.json;
+    }
+
+    match /content/draft {
+      allow read, delete: if isEditor();
+      allow create: if isEditor() && isValidDraft() && request.resource.data.rev == 1;
+      allow update: if isEditor() && isValidDraft() && request.resource.data.rev == resource.data.rev + 1;
+    }
+
+    function isValidDraft() {
+      let data = request.resource.data;
+      return data.keys().hasOnly(['json', 'rev', 'baseVersion', 'updatedAt', 'updatedBy'])
+        && data.keys().hasAll(['json', 'rev', 'baseVersion', 'updatedAt', 'updatedBy'])
+        && isContentJson(data.json)
+        && data.rev is int
+        // 0 until the first publish.
+        && data.baseVersion is int
+        && data.baseVersion >= 0
+        && signedByEditor(data.updatedAt, data.updatedBy);
+    }
+
+    match /versions/{v} {
+      allow read: if isEditor();
+      // Never rewritten; editors may delete old entries to prune the history.
+      allow create: if isEditor() && isValidVersion(v);
+      allow delete: if isEditor();
+    }
+
+    function isValidVersion(v) {
+      let data = request.resource.data;
+      return data.keys().hasOnly(['json', 'version', 'publishedAt', 'publishedBy', 'note'])
+        && data.keys().hasAll(['json', 'version', 'publishedAt', 'publishedBy'])
+        && isContentJson(data.json)
+        && data.version is int
+        && data.version >= 1
+        && v == string(data.version)
+        && signedByEditor(data.publishedAt, data.publishedBy)
+        && (!('note' in data) || (data.note is string && data.note.size() <= 500));
+    }
+
+    // Everything else is closed.
+  }
+}
